@@ -82,8 +82,8 @@
 	 * Dark theme with indigo accent. Limited palette = cohesive design.
 	 * Semantic naming (bg, text, accent) makes colors self-documenting.
 	 */
-	--color-bg: #0f0f0f;              /* Near-black background */
-	--color-bg-alt: #1a1a1a;          /* Slightly lighter for depth/sections */
+	--color-bg: #333333;              /* Near-black background */
+	--color-bg-alt: #5a585a;          /* Slightly lighter for depth/sections */
 	--color-text: #f5f5f5;            /* Off-white for readability (not pure white) */
 	--color-text-muted: #a0a0a0;      /* Subdued text for secondary content */
 	--color-accent: #6366f1;          /* Indigo — primary brand color */
@@ -118,7 +118,7 @@
 .hero-bg {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+	background: linear-gradient(135deg, #ff1b85 0%, #f31aa0 50%, #ffa3e3 100%);
 	z-index: -1;
 }
 
@@ -370,7 +370,7 @@
 
 .project-card:hover {
 	transform: translateY(-8px);
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.192);
 }
 
 .project-image {

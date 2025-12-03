@@ -32,7 +32,7 @@
 .hero-bg {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+	background: linear-gradient(135deg, #3d1900 0%, #3d1900 50%, #3d1900 100%);
 	z-index: -1;
 }
 
