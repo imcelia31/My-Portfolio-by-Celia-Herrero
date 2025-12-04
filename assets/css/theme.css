@@ -207,16 +207,18 @@
 }
 
 .hero-title {
-	font-size: var(--text-4xl);
-	font-weight: 800;
-	margin-bottom: var(--space-sm);
-	letter-spacing: -0.02em;
+	
+    font-family: "Borel", cursive;
+    font-size: 4rem;
+    font-feature-settings: "liga" 1, "calt" 1; /* ligaduras + caligrafía */
+    letter-spacing: 0; /* por si quieres que estén pegaditas */
 }
 
 .hero-subtitle {
-	font-size: var(--text-xl);
-	color: var(--color-text-muted);
-	margin-bottom: var(--space-lg);
+	font-family: 'Schoolbell', cursive;
+	font-size: var(--text-lg);
+	margin-top: -0.5rem; 
+	letter-spacing: 0.5px;
 }
 
 /* Scroll Indicator */
@@ -258,20 +260,68 @@
    6. Button
    -------------------------------------------------------------------------- */
 .btn {
-	display: inline-block;
-	padding: var(--space-sm) var(--space-lg);
-	background: var(--color-accent);
-	color: white;
-	font-weight: 600;
-	border-radius: 8px;
-	transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .btn:hover,
 .btn:focus {
-	background: var(--color-accent-hover);
-	transform: translateY(-2px);
+  background: var(--color-accent-hover);
+  transform: translateY(-2px);
 }
+
+/* --------------------------------------------------------------------------
+   Glass Button más cristal estilo Apple Flow
+   -------------------------------------------------------------------------- */
+.btn-glass-flow {
+  display: inline-block;
+  padding: 1em 2.5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50px; /* súper redondeado tipo gota */
+  background: rgba(255, 255, 255, 0.05); /* súper transparente */
+  backdrop-filter: blur(25px); /* blur intenso */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.05), 0 0 0 1px rgba(255,255,255,0.05) inset;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Reflejo dinámico tipo gotas */
+.btn-glass-flow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 70%);
+  animation: flow 4s linear infinite;
+  transform: rotate(-20deg);
+  pointer-events: none;
+}
+
+/* Animación de flujo */
+@keyframes flow {
+  0% { transform: rotate(0deg) translate(0,0); }
+  100% { transform: rotate(360deg) translate(0,0); }
+}
+
+/* Hover suave y flotante */
+.btn-glass-flow:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(255,255,255,0.08) inset;
+  transform: translateY(-2px) scale(1.05);
+}
+
 
 /* --------------------------------------------------------------------------
    7. About Section
@@ -648,6 +698,57 @@
 		width: var(--fill);
 		transition: none;
 	}
+}
+/* --------------------------------------------------------------------------
+   2. Navbar (repartida con logo centrado)
+   -------------------------------------------------------------------------- */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: var(--space-md); /* espacio entre links del mismo grupo */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Separación extra de los grupos respecto al logo */
+.nav-left {
+  margin-right: 40px; /* aumenta la distancia desde el logo */
+}
+
+.nav-right {
+  margin-left: 40px; /* aumenta la distancia desde el logo */
+}
+
+.nav-logo {
+  flex: 2;           /* más espacio central */
+  text-align: center; /* centra el logo */
+  font-weight: bold;
+  font-size: var(--text-xl);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/* Links con tipografía Schoolbell */
+.nav-left a,
+.nav-right a {
+  font-family: 'Schoolbell', cursive;
+  font-size: var(--text-lg);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: var(--color-accent);
 }
 
 /* --------------------------------------------------------------------------
