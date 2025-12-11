@@ -86,7 +86,7 @@
 	--color-bg-alt: #5a585a;          /* Slightly lighter for depth/sections */
 	--color-text: #f5f5f5;            /* Off-white for readability (not pure white) */
 	--color-text-muted: #a0a0a0;      /* Subdued text for secondary content */
-	--color-accent: #6366f1;          /* Indigo — primary brand color */
+	--color-accent: #f7a7bf;          /* Indigo — primary brand color */
 	--color-accent-hover: #818cf8;    /* Lighter indigo for hover states */
 
 	/*
@@ -257,7 +257,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   6. Button
+   6. Button base
    -------------------------------------------------------------------------- */
 .btn {
   display: inline-block;
@@ -276,52 +276,67 @@
 }
 
 /* --------------------------------------------------------------------------
-   Glass Button más cristal estilo Apple Flow
+   Glass Button estilo Apple Flow (REALISTA – SIN animaciones raras)
    -------------------------------------------------------------------------- */
 .btn-glass-flow {
   display: inline-block;
-  padding: 1em 2.5em;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-  border-radius: 50px; /* súper redondeado tipo gota */
-  background: rgba(255, 255, 255, 0.05); /* súper transparente */
-  backdrop-filter: blur(25px); /* blur intenso */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.05), 0 0 0 1px rgba(255,255,255,0.05) inset;
+  padding: 1em 2.8em;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+
+  border-radius: 40px;
+
+  /* Cristal suave */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(22px) saturate(150%);
+
+  /* Sombra suave + profundidad realista */
+  box-shadow:
+    inset 0 1px 3px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 5px rgba(0, 0, 0, 0.15),
+    0 8px 25px rgba(0, 0, 0, 0.25);
+
+  /* Borde (puedes cambiar aquí el color) */
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
-  z-index: 10;
+  transition: 0.25s ease;
+  z-index: 1;
 }
 
-/* Reflejo dinámico tipo gotas */
-.btn-glass-flow::before {
-  content: '';
+/* Highlight superior para realismo */
+.btn-glass-flow::after {
+  content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 70%);
-  animation: flow 4s linear infinite;
-  transform: rotate(-20deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.35),
+    transparent );
+  border-radius: inherit;
   pointer-events: none;
 }
 
-/* Animación de flujo */
-@keyframes flow {
-  0% { transform: rotate(0deg) translate(0,0); }
-  100% { transform: rotate(360deg) translate(0,0); }
-}
-
-/* Hover suave y flotante */
+/* --------------------------------------------------------------------------
+   Hover ROSA suave (sin exageraciones)
+   -------------------------------------------------------------------------- */
 .btn-glass-flow:hover {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(255,255,255,0.08) inset;
-  transform: translateY(-2px) scale(1.05);
-}
+  background: rgba(244, 201, 214, 0.25); /* rosa pastel */
+  border-color: #f8a5be;
 
+  /* Glow equilibrado */
+  box-shadow:
+    inset 0 1px 3px rgba(255, 46, 115, 0.35),
+    inset 0 -2px 5px rgba(0, 0, 0, 0.12),
+    0 12px 35px rgba(244, 201, 214, 0.35);
+
+  transform: translateY(-2px) scale(1.06);
+}
 
 /* --------------------------------------------------------------------------
    7. About Section
