@@ -1,25 +1,23 @@
 # Project Brief
 
-**Student:** [Your Name]  
-**Handle:** @[your-github-username]  
+**Student:** [CeliaHerrero]  
+**Handle:** @[imcelia31]  
 **Course:** Web Design 2025 · Fall  
-**Date:** [Fill in date - Week 2]
-
 ---
 
 ## Project Concept
 
 ### What are you building?
 
-<!-- Describe your project in 2-3 sentences -->
+<!-- Estoy diseñando un portfolio basado en mi porfolio visual previamente realizado. Busco que refleje claramente mi estilo personal y convertirlo en una experiencia visual dinámica, creativa y divertida.-->
 
 ### Who is it for?
 
-<!-- Define your target audience -->
+<!-- Este portfolio está dirigido a posibles empresas interesadas en contratarme y, en un futuro, podría ampliarse incorporando una tienda donde vender prints o merchandising con mis diseños. -->
 
 ### Why does it matter?
 
-<!-- Explain the purpose and value of your project -->
+<!-- Tener un portfolio web es la mejor forma de darse a conocer en el mundo del diseño y la ilustración, ya que es más accesible y dinámico que unas diapositivas y permite jugar con más elementos que aportan personalidad al trabajo. -->
 
 ---
 
@@ -61,7 +59,7 @@
 
 ### Content Sources
 
-<!-- Where will your content come from? -->
+<!-- Mis propias ilustraciones y diseños -->
 
 ### Multilingual Considerations
 
@@ -75,19 +73,19 @@
 
 ### Visual Style
 
-<!-- Describe your aesthetic approach -->
+<!-- Estoy siguiendo la misma línea creativa que en mi portfolio en presentación. Se trata de un estilo que bebe del mundo digital, inspirado en carpetas y ventanas, pero que a la vez se mezcla con mi estilo de dibujo y visual, muy centrado en la textura y el trazo analógico. Para reforzar este contraste utilizo tipografías que aluden a lo manual junto a mis ilustraciones, creando un lenguaje gráfico propio basado en la disonancia y el contraste.  -->
 
 ### Color Palette
 
-<!-- List your main colors -->
+<!-- #C4626E, #552222, #FBF4EA   -->
 
 ### Typography
 
-<!-- What fonts/typeface approach will you use? -->
+<!-- advercasefront,billy y wondertype -->
 
 ### Inspiration/References
 
-<!-- List 2-3 websites or designs that inspire your approach -->
+<!-- https://daria-stolyarova.com/, https://www.behance.net/gallery/195637393/Graphic-Design-Portfolio-2024 y https://studio-true.net/ -->
 
 ---
 
@@ -113,11 +111,18 @@
 ## Reflection Questions
 
 ### What excites you most about this project?
+Transformar mi portfolio en una versión web y poder ver mi trabajo de esa manera.
 
-### What challenges do you anticipate?
+### What challenges do you have? 
+por ahora:
+-Romper el código varias veces mientras experimentaba.
+-Confusión con la colocación del código anterior, por lo que estoy empezando desde cero.
+-Algunos tamaños de elementos aún no se ajustan correctamente
+-Que chatty no me hace caso 
+- que se me olvida hacer commits
 
 ### How does this project connect to your learning goals?
-
+Me esta permitiendo experimentar mas desde una zona de comfort como es mi estilo. 
 ---
 
 _This brief will evolve as your project develops. Update it as needed and reference it in your weekly commits._

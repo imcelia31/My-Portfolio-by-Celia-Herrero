@@ -1,28 +1,23 @@
-# Project metadata - fill this out by Week 4
-# This file will be used to generate your entry in the course showroom
-
 # Basic information
-handle: your-github-username
-name: Your Full Name
-email: your-email@udit.es
+handle: imcelia31
+name: Celia Herrero
+email: celiachg31@gmail.com
 
 # URLs (will be auto-generated if you follow naming conventions)
-github_url: https://github.com/your-username
-project_url: https://your-username.github.io/your-project-repo
-repository_url: https://github.com/your-username/your-project-repo
+github_url: https://github.com/imcelia31
+project_url: https://imcelia31.github.io/My-Portfolio-by-Celia-Herrero
+repository_url: https://github.com/imcelia31/My-Portfolio-by-Celia-Herrero
 
 # Project details
 title:
- es: Título de tu Proyecto en Español
- en: Your Project Title in English
+ es: Mi Portfolio
+ es: Mi Portfolio
 
 abstract:
  es: |
-  Una descripción concisa de tu proyecto web en español. 
-  Explica qué construyes, para quién y por qué es importante.
+  Estoy diseñando un portfolio basado en mi porfolio visual previamente realizado, con el objetivo de reflejar claramente mi estilo personal y transformarlo en una experiencia visual dinámica, creativa y divertida. Este portfolio está dirigido a posibles empresas interesadas en contratarme y, en un futuro, podría ampliarse incorporando una tienda donde vender prints o merchandising con mis diseños. Además, el formato web se presenta como la mejor forma de darse a conocer en el mundo del diseño y la ilustración, ya que es más accesible y dinámico que una presentación en diapositivas y permite jugar con más elementos que aportan personalidad al trabajo.
  en: |
-  A concise description of your web project in English.
-  Explain what you're building, for whom, and why it matters.
+  I am designing a portfolio based on my previously developed visual portfolio, with the aim of clearly reflecting my personal style and turning it into a dynamic, creative, and engaging visual experience. This portfolio is aimed at potential companies interested in hiring me and could be expanded in the future to include an online shop selling prints or merchandise featuring my designs. In addition, a web-based portfolio is the best way to gain visibility in the world of design and illustration, as it is more accessible and dynamic than a slide presentation and allows for greater creative freedom and personality.
 
 # Technical tags (choose relevant ones)
 tags:
@@ -38,13 +33,6 @@ learning_focus:
  - mobile-first-design
  - web-accessibility
  # Add more as you progress
-
-# Week tracking (update as you go)
-milestones:
- week_1_setup: false
- week_2_brief: false
- week_4_metadata: false
- week_5_showcase: false
 
 # Optional: link to your project brief
 brief_url: project-brief.md

@@ -1,184 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Borel&family=Schoolbell&family=Google+Sans+Code&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <script src="./assets/js/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Celia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/folder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="nav">
-    <div class="nav-container">
-      <ul class="nav-left">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-
-      <a href="#" class="nav-logo">My Portfolio</a>
-
-      <ul class="nav-right">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Call me</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <main id="main">
-
-<!-- Hero Section -->
-<section id="hero" class="hero">
-  <div class="hero-bg parallax-bg"></div>
-
-  <div class="hero-content">
-    <h1 class="hero-title animate-on-scroll">My Portfolio</h1>
-    <p class="hero-subtitle animate-on-scroll">by Celia Herrero</p>
-
-    <!-- Glass Flow Button -->
-    <a href="#projects" class="btn-glass-flow">View my Work</a>
-  </div>
-
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="scroll-arrow"></div>
-  </div>
-</section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="section-title animate-on-scroll">Hi it´s Me</h2>
-        <div class="about-grid">
-
-          <div class="about-text animate-on-scroll">
-            <p>
-              I'm a passionate front-end developer with 5 years of experience
-              building responsive, accessible, and performant web applications.
-            </p>
-            <p>
-              My focus is on creating seamless user experiences through clean code
-              and thoughtful design. I believe in the power of vanilla JavaScript
-              and modern CSS to create stunning interfaces without framework bloat.
-            </p>
-          </div>
-
-          <div class="skills-grid" data-reveal-stagger>
-            <div class="skill-card">
-              <span class="skill-icon">🎨</span>
-              <h3>CSS/Sass</h3>
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
-            </div>
-            <div class="skill-card">
-              <span class="skill-icon">⚡</span>
-              <h3>JavaScript</h3>
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
-            </div>
-            <div class="skill-card">
-              <span class="skill-icon">📱</span>
-              <h3>Responsive</h3>
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 98%"></div></div>
-            </div>
-            <div class="skill-card">
-              <span class="skill-icon">♿</span>
-              <h3>A11y</h3>
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
-            </div>
-          </div>
-
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-group nav-left">
+            <a href="#" class="nav-link">home</a>
+            <a href="#" class="nav-link">about me</a>
         </div>
-      </div>
+        <div class="nav-logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-group nav-right">
+            <a href="#" class="nav-link">my work</a>
+            <a href="#" class="nav-link">call me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <!-- Fondo ilustrado -->
+        <div class="background-illustration">
+            <img src="assets/images/fondo.png" alt="Background">
+        </div>
+
+        <!-- Carpeta Books - Izquierda arriba -->
+        <div class="folder-container folder-books">
+            <div class="folder">
+                <div class="folder__back">
+                    <div class="paper"></div>
+                    <div class="paper"></div>
+                    <div class="paper"></div>
+                    <div class="folder__front"></div>
+                    <div class="folder__front right"></div>
+                </div>
+            </div>
+            <span class="folder-label">Books</span>
+        </div>
+
+
+        <!-- Título principal -->
+        <div class="hero-content">
+            <span class="year">2026</span>
+            <h1 class="title">My portfolio</h1>
+            <p class="author">By Celia</p>
+        </div>
+
+        <!-- Ilustración Branding con corazón -->
+        <div class="branding-section">
+            <div class="heart-bg"></div>
+            <img src="assets/images/Branding.png" alt="Branding illustration" class="branding-img">
+            <span class="branding-label">Branding</span>
+        </div>
+
+        <!-- Carpeta Posters - Derecha -->
+        <div class="folder-container folder-posters">
+            <div class="folder">
+                <div class="folder__back">
+                    <div class="paper"></div>
+                    <div class="paper"></div>
+                    <div class="paper"></div>
+                    <div class="folder__front"></div>
+                    <div class="folder__front right"></div>
+                </div>
+            </div>
+            <span class="folder-label">Posters</span>
+        </div>
+
+      
+
+        <!-- Ilustración "This is my mind" -->
+        <div class="illustration-section">
+            <img src="assets/images/dibujito.png" alt="This is my mind illustration" class="mind-illustration">
+            <span class="illustration-label">Illustration</span>
+        </div>
+
+        <!-- Botón View my work -->
+        <a href="#" class="btn-view-work">view my work</a>
+    </main>
+
+    <!-- About Me Section -->
+    <section class="about-section">
+        <!-- Pestaña de carpeta -->
+        <div class="about-tab">About me</div>
+        
+        <!-- Contenido de la carpeta -->
+        <div class="about-folder">
+            <!-- Columna izquierda - Foto -->
+            <div class="about-left">
+                <div class="about-photo-frame">
+                    <img src="assets/images/yop.jpg" alt="Celia" class="about-photo">
+                </div>
+            </div>
+
+            <!-- Columna central - Texto -->
+            <div class="about-center">
+                <span class="about-subtitle">Get to know me</span>
+                <h2 class="about-title">Im Celia</h2>
+                <p class="about-description">
+                    Hi! I'm Celia, a Graphic Design and Illustration student in my final year. I love creating images that communicate ideas and tell stories, both through illustration and design. I'm always experimenting with new styles and concepts to keep improving my skills and growing creatively. I enjoy working in a team and sharing creative ideas with others.
+                    I hope you enjoy my portfolio and feel free to get in touch!
+                </p>
+            </div>
+
+            <!-- Columna derecha - Iconos y botón -->
+            <div class="about-right">
+                <div class="about-icons">
+                    <img src="assets/icons/photoshop.png" alt="Photoshop">
+                    <img src="assets/icons/illustrator.png" alt="Illustrator">
+                    <img src="assets/icons/procreate.png" alt="Procreate">
+                    <img src="assets/icons/after.png" alt="After Effects">
+                    <img src="assets/icons/lr.png" alt="Lightroom">
+                    <img src="assets/icons/figma.png" alt="Figma">
+                </div>
+                <a href="#" class="btn-contact">contact me</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-      <div class="container">
-        <h2 class="section-title animate-on-scroll">Featured Projects</h2>
-        <div class="projects-grid" data-reveal-stagger>
-
-          <article class="project-card">
-            <div class="project-image">
-              <img src="https://picsum.photos/400/300?random=1" alt="E-commerce Platform" loading="lazy" />
-            </div>
-            <div class="project-content">
-              <h3>E-commerce Platform</h3>
-              <p>A fully responsive online store with cart functionality and payment integration.</p>
-              <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image">
-              <img src="https://picsum.photos/400/300?random=2" alt="Dashboard UI" loading="lazy" />
-            </div>
-            <div class="project-content">
-              <h3>Analytics Dashboard</h3>
-              <p>Real-time data visualization dashboard with dark mode support.</p>
-              <div class="project-tags">
-                <span>CSS Grid</span>
-                <span>Charts</span>
-                <span>API</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image">
-              <img src="https://picsum.photos/400/300?random=3" alt="Mobile App Landing" loading="lazy" />
-            </div>
-            <div class="project-content">
-              <h3>App Landing Page</h3>
-              <p>Conversion-optimized landing page with scroll animations.</p>
-              <div class="project-tags">
-                <span>Animation</span>
-                <span>A/B Test</span>
-                <span>SEO</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
-        <div class="contact-content animate-on-scroll">
-          <p>Interested in working together? Let's talk about your project.</p>
-          <a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
-          <div class="social-links">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Twitter">Twitter</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 by Celia Herrero. Built with vanilla HTML, CSS & JS.</p>
-      <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
-    </div>
-  </footer>
-
+    <script src="js/folder.js"></script>
 </body>
 </html>
 

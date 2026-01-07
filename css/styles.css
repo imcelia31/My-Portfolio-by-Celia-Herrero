@@ -1,0 +1,494 @@
+/* Fonts */
+@font-face {
+    font-family: 'Billy';
+    src: url('../assets/typo/Billy_2.0.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'WonderType';
+    src: url('../assets/typo/WonderType-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Advercase';
+    src: url('../assets/typo/AdvercaseFont-Demo-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Advercase';
+    src: url('../assets/typo/AdvercaseFont-Demo-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Billy', 'Georgia', serif;
+    background-color: #F5F0E8;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D56F84;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C4626E;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #D56F84 transparent;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    gap: 30vh;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-group {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.6rem;
+    color: #C4626E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+
+}
+
+.nav-link:hover {
+    color: #8B4B55;
+}
+
+.nav-logo {
+    width: 120px;
+    height: 120px;
+}
+
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-top: -80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fondo ilustrado */
+.background-illustration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: visible;
+}
+
+.background-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+/* Hero Content - Título */
+.hero-content {
+    z-index: 10;
+    margin-top: -50px;
+}
+
+.year {
+    font-family: 'advercase', 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #552222;
+    display: block;
+    margin-bottom: -20px;
+    text-align: left;
+}
+
+.title {
+    font-family: 'WonderType', 'Georgia', serif;
+    font-size: 6rem;
+    color: #C4626E;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-family: 'billy', 'Georgia', serif;
+    font-size: 1.3rem;
+    color: #552222;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* Botón View my work */
+.btn-view-work {
+    font-family: 'billy', 'Georgia', serif;
+    color: #FBF4EA;
+    padding: 18px 60px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    z-index: 10;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    background: #D56F84;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+
+
+}
+
+.btn-view-work:hover {
+    background-color: #C4626E;
+    transform: translateY(-1px);
+}
+
+/* ==================== FOLDER STYLES ==================== */
+.folder-container {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.folder-label {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 20px;
+    color: #552222;
+    letter-spacing: 1px;
+}
+
+/* Folder positions */
+.folder-books {
+    top: 130px;
+    left: 60px;
+}
+
+.folder-posters {
+    top: 380px;
+    right: 80px;
+}
+
+/* ==================== ILLUSTRATIONS ==================== */
+
+/* Branding section */
+.branding-section {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.branding-img {
+    width: 220px   ;
+    height: auto;
+    object-fit: contain;
+}
+
+.branding-label {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 20px;
+    color: #552222;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* Illustration section - "This is my mind" */
+.illustration-section {
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.mind-illustration {
+    width: 240px;
+    height: auto;
+    object-fit: cover
+}
+
+.illustration-label {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 20px;
+    color: #552222;
+    letter-spacing: 1px;
+    margin-top: -70px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 4.5rem;
+    }
+    
+    .folder-books {
+        left: 30px;
+    }
+    
+    .branding-section {
+        right: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        gap: 20px;
+        padding: 15px 20px;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    
+    .title {
+        font-size: 3rem;
+    }
+    
+    .year {
+        font-size: 1.8rem;
+    }
+    
+    .folder-books {
+        top: 100px;
+        left: 20px;
+    }
+    
+    .folder-posters {
+        top: 100px;
+        right: 20px;
+    }
+    
+    .branding-section {
+        top: 200px;
+        right: 20px;
+    }
+    
+    .branding-img {
+        width: 120px;
+    }
+    
+    .illustration-section {
+        bottom: 80px;
+        left: 20px;
+    }
+    
+    .mind-illustration {
+        width: 100px;
+    }
+    
+    .btn-view-work {
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+}
+
+/* ==================== ABOUT SECTION ==================== */
+.about-section {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    margin-top: -60px;
+    z-index: 50;
+    
+}
+
+/* Pestaña de la carpeta */
+.about-tab {
+    background-color: #E2798C;
+    color:  #FBF4EA;
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.5rem;
+    padding: 15px 100px;
+    padding-right: 200px;
+    border-radius: 40px 40px 0 0;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 51;
+    box-shadow: 15px 0 0 0 #BB5E6F;
+}
+
+
+/* Carpeta contenedora */
+.about-folder {
+    border-radius: 0;
+    padding: 50px 120px;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #E2798C;
+    height: 450px;
+
+
+}
+
+/* Columna izquierda - Foto */
+.about-left {
+    flex: 0 0 auto;
+}
+
+.about-photo-frame {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #C4626E;
+}
+
+.about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Columna central - Texto */
+.about-center {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-subtitle {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #552222;
+    letter-spacing: 1px;
+}
+
+.about-title {
+    font-family: 'advercase', 'Georgia', serif;
+    font-size: 3.5rem;
+    color: #BB5E6F;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 30px;
+    color: #FBF4EA;
+    line-height: 100%;
+}
+
+/* Columna derecha - Iconos y botón */
+.about-right {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    object-fit: cover;
+}
+
+.about-icons img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.btn-contact {
+    font-family: 'Billy', 'Georgia', serif;
+    color: #552222;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    background: rgba(196, 98, 110, 0.5);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-contact:hover {
+    background-color: #C4626E;
+    color: #FBF4EA;
+    transform: translateY(-1px);
+}
+
+/* About responsive */
+@media (max-width: 968px) {
+    .about-folder {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .about-photo-frame {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .about-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
