@@ -1,0 +1,914 @@
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* ===== NAVBAR & HERO RESPONSIVE ===== */
+
+/* 1400px - Desktop grande */
+@media (max-width: 1400px) {
+    .navbar {
+        gap: 20vh;
+        padding: 20px 40px;
+    }
+}
+
+/* 1200px - Desktop */
+@media (max-width: 1200px) {
+    .navbar {
+        gap: 15vh;
+        padding: 18px 35px;
+    }
+    
+    .nav-link {
+        font-size: 1.4rem;
+    }
+    
+    .nav-logo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Hero */
+    .hero {
+        margin-top: -60px;
+    }
+    
+    .title {
+        font-size: 5rem;
+    }
+    
+    .year {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content {
+        margin-top: -30px;
+    }
+    
+    /* Folders & Illustrations */
+    .folder-books {
+        left: 40px;
+        top: 120px;
+    }
+    
+    .folder-stuff {
+        right: 60px;
+        top: 350px;
+    }
+    
+    .branding-section {
+        right: 180px;
+        top: 90px;
+    }
+    
+    .branding-img {
+        width: 190px;
+    }
+    
+    .illustration-section {
+        left: 120px;
+        bottom: 90px;
+    }
+    
+    .mind-illustration {
+        width: 210px;
+    }
+    
+    /* About Section */
+    .about-folder {
+        flex-wrap: wrap;
+        padding: 40px 50px;
+        gap: 25px;
+        height: auto;
+    }
+    
+    .about-left {
+        flex: 0 0 auto;
+    }
+    
+    .about-photo-frame {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .about-center {
+        flex: 1;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .about-title {
+        font-size: 2.8rem;
+    }
+    
+    .about-description {
+        font-size: 22px;
+        line-height: 1.35;
+    }
+    
+    .about-right {
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .about-icons {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+    }
+    
+    .about-icons img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .btn-contact {
+        width: auto;
+        padding: 12px 50px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 60px 40px;
+    }
+    
+    .projects-title {
+        font-size: 3.5rem;
+        margin-left: 20px;
+    }
+    
+    .modal-content {
+        max-width: 900px;
+        padding: 35px;
+    }
+    
+    .carousel-container {
+        gap: 30px;
+        min-height: 350px;
+    }
+    
+    .carousel-image-wrapper {
+        height: 350px;
+    }
+}
+
+/* 992px - Tablets */
+@media (max-width: 992px) {
+    .navbar {
+        gap: 8vh;
+        padding: 15px 30px;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    
+    .nav-group {
+        gap: 25px;
+    }
+    
+    .nav-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Hero */
+    .hero {
+        margin-top: -50px;
+        min-height: 90vh;
+    }
+    
+    .title {
+        font-size: 4rem;
+    }
+    
+    .year {
+        font-size: 2rem;
+    }
+    
+    .author {
+        font-size: 1.2rem;
+    }
+    
+    .btn-view-work {
+        padding: 16px 50px;
+        font-size: 1rem;
+    }
+    
+    /* Hide folders and illustrations in hero */
+    .folder-books,
+    .folder-stuff,
+    .branding-section,
+    .illustration-section {
+        display: none;
+    }
+    
+    /* About Section */
+    .about-section {
+        margin-top: 0;
+    }
+    
+    .about-tab {
+        font-size: 1.3rem;
+        padding: 12px 60px;
+        padding-right: 100px;
+        border-radius: 30px 30px 0 0;
+    }
+    
+    .about-folder {
+        flex-wrap: wrap;
+        padding: 35px 25px;
+        height: auto;
+        gap: 20px;
+        border-radius: 0 30px 30px 30px;
+    }
+    
+    .about-left {
+        flex: 0 0 auto;
+    }
+    
+    .about-photo-frame {
+        width: 150px;
+        height: 150px;
+        border-width: 4px;
+    }
+    
+    .about-center {
+        flex: 1;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .about-subtitle {
+        font-size: 1rem;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .about-description {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+    
+    .about-right {
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .about-icons {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+    }
+    
+    .about-icons img {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .btn-contact {
+        padding: 12px 50px;
+        font-size: 1rem;
+        width: auto;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 50px 30px;
+    }
+    
+    .projects-title {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    
+    .projects-grid {
+        gap: 40px;
+    }
+    
+    .project-folder-icon {
+        width: 120px;
+        height: 100px;
+    }
+    
+    .modal-content {
+        max-width: 700px;
+        padding: 30px;
+        max-height: 90vh;
+    }
+    
+    .modal-category-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .carousel-container {
+        flex-direction: column;
+        gap: 20px;
+        min-height: auto;
+    }
+    
+    .carousel-image-wrapper {
+        flex: none;
+        width: 100%;
+        height: 280px;
+    }
+    
+    .carousel-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .carousel-info {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .carousel-project-title {
+        font-size: 1.6rem;
+    }
+    
+    .carousel-project-desc {
+        font-size: 1rem;
+    }
+    
+    .image-dots {
+        bottom: 12px;
+        padding: 8px 14px;
+        gap: 8px;
+    }
+    
+    .image-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* 768px - Tablets pequeñas / Mobile landscape */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 25px;
+        justify-content: center;
+    }
+    
+    .nav-logo {
+        order: -1;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+    }
+    
+    .nav-group {
+        gap: 20px;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+    }
+    
+    /* Hero */
+    .hero {
+        margin-top: -40px;
+        min-height: 70vh;
+    }
+    
+    .hero-content {
+        margin-top: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 3.2rem;
+    }
+    
+    .year {
+        font-size: 1.6rem;
+        margin-bottom: -15px;
+        text-align: center;
+    }
+    
+    .author {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+    
+    .btn-view-work {
+        padding: 14px 40px;
+        font-size: 0.95rem;
+        margin-top: 25px;
+    }
+    
+    /* About Section */
+    .about-tab {
+        font-size: 1.1rem;
+        padding: 10px 40px;
+        padding-right: 70px;
+        border-radius: 25px 25px 0 0;
+        box-shadow: 10px 0 0 0 #BB5E6F;
+    }
+    
+    .about-folder {
+        flex-wrap: wrap;
+        padding: 25px 20px;
+        gap: 15px;
+        border-radius: 0 25px 25px 25px;
+    }
+    
+    .about-photo-frame {
+        width: 120px;
+        height: 120px;
+        border-width: 3px;
+    }
+    
+    .about-center {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .about-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .about-title {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .about-description {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    
+    .about-right {
+        flex: 0 0 100%;
+    }
+    
+    .about-icons {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+    }
+    
+    .about-icons img {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+    
+    .btn-contact {
+        padding: 10px 40px;
+        font-size: 0.9rem;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 40px 20px;
+    }
+    
+    .projects-title {
+        font-size: 2.5rem;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .projects-grid {
+        gap: 30px;
+    }
+    
+    .project-folder-icon {
+        width: 100px;
+        height: 80px;
+    }
+    
+    .project-folder-label {
+        font-size: 1.1rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+    
+    .modal-close {
+        top: 12px;
+        right: 15px;
+        font-size: 1.6rem;
+    }
+    
+    .modal-category-title {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+    
+    .modal-carousel {
+        gap: 10px;
+    }
+    
+    .carousel-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+    
+    .carousel-image-wrapper {
+        height: 220px;
+        border-radius: 10px;
+    }
+    
+    .carousel-project-title {
+        font-size: 1.4rem;
+    }
+    
+    .carousel-project-desc {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .image-dots {
+        bottom: 10px;
+        padding: 6px 12px;
+        gap: 6px;
+    }
+    
+    .image-dot {
+        width: 9px;
+        height: 9px;
+        border-width: 1.5px;
+    }
+    
+    .lightbox-close {
+        top: 20px;
+        right: 25px;
+        font-size: 2.5rem;
+    }
+    
+    .lightbox-zoom-controls {
+        bottom: 70px;
+    }
+    
+    .zoom-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .lightbox-hint {
+        font-size: 0.8rem;
+        bottom: 25px;
+    }
+}
+
+/* 576px - Mobile portrait */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+    
+    .nav-logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+    
+    .nav-group {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 0.95rem;
+    }
+    
+    /* Hero */
+    .hero {
+        margin-top: -30px;
+        min-height: 60vh;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .year {
+        font-size: 1.4rem;
+        margin-bottom: -10px;
+    }
+    
+    .author {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    
+    .btn-view-work {
+        padding: 12px 35px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+    
+    /* About Section */
+    .about-tab {
+        font-size: 1rem;
+        padding: 8px 30px;
+        padding-right: 50px;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 8px 0 0 0 #BB5E6F;
+    }
+    
+    .about-folder {
+        flex-wrap: wrap;
+        padding: 20px 15px;
+        gap: 12px;
+        border-radius: 0 20px 20px 20px;
+    }
+    
+    .about-photo-frame {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .about-center {
+        flex: 1;
+        min-width: 150px;
+    }
+    
+    .about-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .about-title {
+        font-size: 1.5rem;
+    }
+    
+    .about-description {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+    
+    .about-right {
+        flex: 0 0 100%;
+    }
+    
+    .about-icons {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
+    }
+    
+    .about-icons img {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+    }
+    
+    .btn-contact {
+        padding: 10px 35px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 35px 15px;
+    }
+    
+    .projects-title {
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    
+    .projects-grid {
+        gap: 25px;
+    }
+    
+    .project-folder-icon {
+        width: 80px;
+        height: 65px;
+    }
+    
+    .project-folder-label {
+        font-size: 1rem;
+    }
+    
+    .modal-content {
+        padding: 15px 12px;
+        max-height: 92vh;
+    }
+    
+    .modal-close {
+        top: 8px;
+        right: 12px;
+        font-size: 1.4rem;
+    }
+    
+    .modal-category-title {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+    
+    .carousel-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    
+    .carousel-image-wrapper {
+        height: 180px;
+    }
+    
+    .carousel-project-title {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-project-desc {
+        font-size: 0.85rem;
+    }
+    
+    .image-dots {
+        bottom: 8px;
+        padding: 5px 10px;
+        gap: 5px;
+    }
+    
+    .image-dot {
+        width: 8px;
+        height: 8px;
+        border-width: 1px;
+    }
+    
+    .lightbox-zoom-controls {
+        bottom: 60px;
+        gap: 10px;
+    }
+    
+    .zoom-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .lightbox-hint {
+        font-size: 0.75rem;
+        bottom: 20px;
+    }
+}
+
+/* 400px - Pantallas muy pequeñas */
+@media (max-width: 400px) {
+    .navbar {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+    
+    .nav-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .nav-group {
+        gap: 12px;
+    }
+    
+    .nav-link {
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Hero */
+    .hero {
+        margin-top: -20px;
+        min-height: 55vh;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .year {
+        font-size: 1.2rem;
+        margin-bottom: -8px;
+    }
+    
+    .author {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .btn-view-work {
+        padding: 10px 28px;
+        font-size: 0.85rem;
+        margin-top: 15px;
+    }
+    
+    /* About Section */
+    .about-tab {
+        font-size: 0.9rem;
+        padding: 8px 25px;
+        padding-right: 40px;
+        box-shadow: 6px 0 0 0 #BB5E6F;
+    }
+    
+    .about-folder {
+        flex-wrap: wrap;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+    
+    .about-photo-frame {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .about-center {
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .about-subtitle {
+        font-size: 0.7rem;
+    }
+    
+    .about-title {
+        font-size: 1.2rem;
+    }
+    
+    .about-description {
+        font-size: 9px;
+        line-height: 1.2;
+    }
+    
+    .about-right {
+        flex: 0 0 100%;
+    }
+    
+    .about-icons {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3px;
+    }
+    
+    .about-icons img {
+        width: 28px;
+        height: 28px;
+        border-radius: 5px;
+    }
+    
+    .btn-contact {
+        padding: 8px 25px;
+        font-size: 0.75rem;
+    }
+    
+    /* Projects Section */
+    .projects-title {
+        font-size: 1.7rem;
+    }
+    
+    .project-folder-icon {
+        width: 65px;
+        height: 55px;
+    }
+    
+    .project-folder-label {
+        font-size: 0.9rem;
+    }
+    
+    .modal-content {
+        padding: 12px 10px;
+    }
+    
+    .modal-category-title {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+    
+    .carousel-image-wrapper {
+        height: 150px;
+    }
+    
+    .carousel-project-title {
+        font-size: 1rem;
+    }
+    
+    .carousel-project-desc {
+        font-size: 0.8rem;
+    }
+    
+    .image-dot {
+        width: 7px;
+        height: 7px;
+    }
+}

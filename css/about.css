@@ -1,0 +1,174 @@
+/* ==================== ABOUT SECTION ==================== */
+.about-section {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    margin-top: -60px;
+    z-index: 50;
+}
+
+/* Pestaña de la carpeta */
+.about-tab {
+    background-color: #E2798C;
+    color: #FBF4EA;
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.5rem;
+    padding: 15px 100px;
+    padding-right: 200px;
+    border-radius: 40px 40px 0 0;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 51;
+    box-shadow: 15px 0 0 0 #BB5E6F;
+}
+
+/* Carpeta contenedora */
+.about-folder {
+    border-radius: 0 40px 40px 40px;
+    padding: 50px 120px;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #E2798C;
+    height: 450px;
+}
+
+/* Columna izquierda - Foto */
+.about-left {
+    flex: 0 0 auto;
+}
+
+.about-photo-frame {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #C4626E;
+}
+
+.about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Columna central - Texto */
+.about-center {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-subtitle {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #552222;
+    letter-spacing: 1px;
+}
+
+.about-title {
+    font-family: 'advercase', 'Georgia', serif;
+    font-size: 3.5rem;
+    color: #BB5E6F;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 30px;
+    color: #FBF4EA;
+    line-height: 100%;
+}
+
+/* Columna derecha - Iconos y botón */
+.about-right {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    object-fit: cover;
+}
+
+.about-icons img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about-icons img:hover {
+    transform: scale(1.1);
+}
+
+.btn-contact {
+    font-family: 'Billy', 'Georgia', serif;
+    color: #552222;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    background: rgba(196, 98, 110, 0.5);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-contact:hover {
+    background-color: #C4626E;
+    color: #FBF4EA;
+    transform: translateY(-1px);
+}
+
+/* ==================== ABOUT ANIMATION ==================== */
+.about-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation for About Me elements */
+.about-section .about-tab {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: 0.2s;
+}
+
+.about-section .about-folder {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: 0.35s;
+}
+
+.about-section.visible .about-tab,
+.about-section.visible .about-folder {
+    opacity: 1;
+    transform: translateY(0);
+}

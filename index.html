@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio - Celia</title>
+    <!-- CSS Base -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/folder.css">
+    <!-- CSS Components -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- CSS Responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <!-- Lightbox para imágenes -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-zoom-controls">
+            <button class="zoom-btn zoom-in">+</button>
+            <button class="zoom-btn zoom-out">−</button>
+            <button class="zoom-btn zoom-reset">⟲</button>
+        </div>
+        <div class="lightbox-container">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Preview">
+        </div>
+        <p class="lightbox-hint">Usa la rueda del ratón o arrastra para moverte</p>
+    </div>
+
     <!-- Navegación -->
     <nav class="navbar">
         <div class="nav-group nav-left">
             <a href="#" class="nav-link">home</a>
-            <a href="#" class="nav-link">about me</a>
+            <a href="#about" class="nav-link">about me</a>
         </div>
         <div class="nav-logo">
             <img src="assets/images/logo.png" alt="Logo">
         </div>
         <div class="nav-group nav-right">
-            <a href="#" class="nav-link">my work</a>
+            <a href="#projects" class="nav-link">my work</a>
             <a href="#" class="nav-link">call me</a>
         </div>
     </nav>
@@ -33,12 +53,18 @@
         </div>
 
         <!-- Carpeta Books - Izquierda arriba -->
-        <div class="folder-container folder-books">
+        <div class="folder-container folder-books" data-category="books">
             <div class="folder">
                 <div class="folder__back">
-                    <div class="paper"></div>
-                    <div class="paper"></div>
-                    <div class="paper"></div>
+                    <div class="paper" data-full="assets/content/books/mounstruodehumo/libro1.jpg">
+                        <img src="assets/content/books/mounstruodehumo/libro1.jpg" alt="Book 1">
+                    </div>
+                    <div class="paper" data-full="assets/content/books/miqueridahijahilde/mq1.png">
+                        <img src="assets/content/books/miqueridahijahilde/mq1.png" alt="Book 2">
+                    </div>
+                    <div class="paper" data-full="assets/content/books/esteeseldiariodeunachicanormal/09.png">
+                        <img src="assets/content/books/esteeseldiariodeunachicanormal/09.png" alt="Book 3">
+                    </div>
                     <div class="folder__front"></div>
                     <div class="folder__front right"></div>
                 </div>
@@ -56,26 +82,29 @@
 
         <!-- Ilustración Branding con corazón -->
         <div class="branding-section">
-            <div class="heart-bg"></div>
             <img src="assets/images/Branding.png" alt="Branding illustration" class="branding-img">
             <span class="branding-label">Branding</span>
         </div>
 
-        <!-- Carpeta Posters - Derecha -->
-        <div class="folder-container folder-posters">
+        <!-- Carpeta Stuff - Derecha -->
+        <div class="folder-container folder-stuff" data-category="stuff">
             <div class="folder">
                 <div class="folder__back">
-                    <div class="paper"></div>
-                    <div class="paper"></div>
-                    <div class="paper"></div>
+                    <div class="paper" data-full="assets/content/stuff/newyorker.png">
+                        <img src="assets/content/stuff/newyorker.png" alt="Stuff 1">
+                    </div>
+                    <div class="paper" data-full="assets/content/stuff/lineadeltiempo.jpg">
+                        <img src="assets/content/stuff/lineadeltiempo.jpg" alt="Stuff 2">
+                    </div>
+                    <div class="paper" data-full="assets/content/stuff/cartelrandomlaverdad.jpg">
+                        <img src="assets/content/stuff/cartelrandomlaverdad.jpg" alt="Stuff 3">
+                    </div>
                     <div class="folder__front"></div>
                     <div class="folder__front right"></div>
                 </div>
             </div>
-            <span class="folder-label">Posters</span>
+            <span class="folder-label">Stuff</span>
         </div>
-
-      
 
         <!-- Ilustración "This is my mind" -->
         <div class="illustration-section">
@@ -84,7 +113,7 @@
         </div>
 
         <!-- Botón View my work -->
-        <a href="#" class="btn-view-work">view my work</a>
+        <a href="#projects" class="btn-view-work">view my work</a>
     </main>
 
     <!-- About Me Section -->
@@ -126,7 +155,72 @@
         </div>
     </section>
 
+    <!-- My Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2 class="projects-title">My<br>Projects</h2>
+        
+        <div class="projects-grid">
+            <!-- Books Folder -->
+            <div class="project-folder" data-category="books">
+                <div class="project-folder-icon">
+                    <img src="assets/images/carpeta.svg" alt="Books folder">
+                </div>
+                <span class="project-folder-label">Books</span>
+            </div>
+
+            <!-- Branding Folder -->
+            <div class="project-folder" data-category="branding">
+                <div class="project-folder-icon">
+                    <img src="assets/images/carpeta.svg" alt="Branding folder">
+                </div>
+                <span class="project-folder-label">Branding</span>
+            </div>
+
+            <!-- Stuff Folder -->
+            <div class="project-folder" data-category="stuff">
+                <div class="project-folder-icon">
+                    <img src="assets/images/carpeta.svg" alt="Stuff folder">
+                </div>
+                <span class="project-folder-label">Stuff</span>
+            </div>
+
+            <!-- Illustration Folder -->
+            <div class="project-folder" data-category="illustrations">
+                <div class="project-folder-icon">
+                    <img src="assets/images/carpeta.svg" alt="Illustration folder">
+                </div>
+                <span class="project-folder-label">Illustration</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-category-title" id="modal-category-title">Books</h3>
+            
+            <div class="modal-carousel">
+                <button class="carousel-arrow carousel-prev">&lt;</button>
+                
+                <div class="carousel-container">
+                    <div class="carousel-image-wrapper">
+                        <img class="carousel-image" id="carousel-image" src="" alt="Project image">
+                    </div>
+                    <div class="carousel-info">
+                        <h4 class="carousel-project-title" id="carousel-project-title">Project Name</h4>
+                        <p class="carousel-project-desc" id="carousel-project-desc">Project description goes here...</p>
+                        <div class="carousel-dots" id="carousel-dots"></div>
+                    </div>
+                </div>
+                
+                <button class="carousel-arrow carousel-next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/folder.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 </html>
 

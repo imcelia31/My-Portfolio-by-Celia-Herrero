@@ -96,6 +96,15 @@
   background: var(--paper-1);
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.paper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .paper:nth-child(2) {

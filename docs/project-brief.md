@@ -115,11 +115,12 @@ Transformar mi portfolio en una versión web y poder ver mi trabajo de esa maner
 
 ### What challenges do you have? 
 por ahora:
--Romper el código varias veces mientras experimentaba.
--Confusión con la colocación del código anterior, por lo que estoy empezando desde cero.
--Algunos tamaños de elementos aún no se ajustan correctamente
--Que chatty no me hace caso 
-- que se me olvida hacer commits
+- Romper el código varias veces mientras experimentaba.
+- Confusión con la colocación del código anterior, por lo que estoy empezando desde cero.
+- Algunos tamaños de elementos aún no se ajustan correctamente
+- Que se me olvida hacer commits
+- Algunos elementos no encajan correctamente (en el about me)
+- Al hacer mucho zoom se me rompe el responsive y no consigo solucionarlo
 
 ### How does this project connect to your learning goals?
 Me esta permitiendo experimentar mas desde una zona de comfort como es mi estilo. 
