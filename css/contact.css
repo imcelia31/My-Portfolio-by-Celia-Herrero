@@ -1,0 +1,98 @@
+/* ==================== CONTACT SECTION ==================== */
+.contact-section {
+    background-color: #E2798C;
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+    border-radius: 40px 40px 0 0;
+    justify-content: center;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    z-index: 2;
+}
+
+.contact-title {
+    font-family: 'advercase', 'Georgia', serif;
+    font-size: 4.5rem;
+    color: #BB5E6F;
+    font-weight: normal;
+    line-height: 0.95;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-link {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #FBF4EA;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #552222;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-location,
+.contact-phone {
+    font-family: 'Billy', 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #FBF4EA;
+    letter-spacing: 1px;
+}
+
+.btn-contact-main {
+    font-family: 'Billy', 'Georgia', serif;
+    color: #552222;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    background: rgba(196, 98, 110, 0.5);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    white-space: nowrap;
+}
+
+.btn-contact-main:hover {
+    background-color: #C4626E;
+    color: #FBF4EA;
+    transform: translateY(-2px);
+}
+
+.contact-illustration {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-illustration img {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+}

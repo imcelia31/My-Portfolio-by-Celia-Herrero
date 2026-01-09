@@ -1,4 +1,3 @@
-# Título 
 
 encuentra aquí el proyecto desplegado:^[](https://github.com/imcelia31/My-Portfolio-by-Celia-Herrero)
 
@@ -14,7 +13,7 @@ Se trata de un **proyecto académico**, desarrollado como parte de una asignatur
 
 - Presentar mi trabajo de forma clara y visual  
 - Desarrollar una identidad personal a nivel gráfico y digital  
-- Aplicar conocimientos básicos de desarrollo web  
+- Aplicar conocimientos básicos de desarrollo web y intentar aprender cosas mientras realizo el proyecto
 - Crear una base reutilizable para un portfolio profesional futuro  
 
 ---
@@ -61,7 +60,7 @@ Está planteado como una base que podrá ampliarse en el futuro con:
 
 - Mejor organización del código  
 - Nuevas secciones  
-- Animaciones más avanzadas  
+- Animaciones más avanzadas y dinamicas 
 - Mayor nivel de interactividad  
 
 ---

@@ -118,6 +118,8 @@ const projectsData = {
     ]
 };
 
+
+
 // Current state
 let currentCategory = null;
 let currentProjectIndex = 0;
@@ -444,3 +446,5 @@ function initAboutAnimation() {
 
     observer.observe(aboutSection);
 }
+
+
