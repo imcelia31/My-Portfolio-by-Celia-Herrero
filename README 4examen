@@ -1,0 +1,178 @@
+// PROGRAMACIÓN · APUNTES
+
+// SEO
+SEO:
+Acciones orientadas a mejorar el posicionamiento de una web en Google.
+
+// MOBILE FIRST
+¿Cómo implicas la respuesta mobile first?
+Se aplica mediante media queries, añadiendo detalles y mejoras
+progresivamente a medida que el tamaño de la pantalla crece.
+
+// PROTOCOLO WEB
+¿Qué protocolo sigue tu página web?
+La web utiliza el protocolo HTTPS, que es seguro porque cifra la información
+antes de enviarla.
+El navegador hace una request y el servidor devuelve una response.
+
+// LENGUAJES Y TECNOLOGÍAS
+¿Qué lenguajes usas?
+- HTML5: estructura del contenido
+- CSS3: estilos y diseño responsive
+- JavaScript: interacciones y animaciones
+- APIs externas:
+  - ImageKit.io para la gestión de imágenes
+  - Adobe Fonts para añadir tipografías
+
+// DESPLIEGUE
+Experiencia al desplegar con GitHub:
+La web se despliega mediante GitHub Pages, permitiendo publicar el proyecto
+directamente desde el repositorio.
+
+// HISTORIA DE INTERNET
+¿Año de conexión TCP/IP?
+1969
+
+¿Primera web?
+1989
+
+// PUERTOS Y SERVIDOR
+¿En qué puerto está el sitio web?
+Puerto 443, estándar para HTTPS.
+
+¿Dónde está publicada la web?
+La web está publicada en GitHub Pages.
+Servidor web: GitHub.
+
+// TIPO DE WEB
+¿Qué tipo de web estamos haciendo?
+Web 1.0, ya que es únicamente frontend y no tiene backend.
+
+// ESTRATEGIA DE DISEÑO
+¿Cuál es tu estrategia de diseño?
+Mantengo coherencia usando variables CSS como tokens para colores,
+tipografías y tamaños.
+Todos los botones, tarjetas y títulos reutilizan las mismas clases
+para asegurar consistencia visual.
+El diseño se prueba primero con un boceto en Figma y se basa en el
+estilo de mi portfolio personal.
+
+// URI, URL Y URN
+URI (Uniform Resource Identifier):
+Identificador global de un recurso en la web.
+Incluye tanto URL como URN.
+
+URL (Uniform Resource Locator):
+Dirección específica de una página y cómo acceder a ella.
+
+URN (Uniform Resource Name):
+Nombre del recurso, independiente de su localización.
+
+// RESPONSIVE DESIGN
+¿Cómo haces que tu web sea responsive?
+- Uso de <meta name="viewport"> en el index.html
+- Media queries
+- Diseño fluido con clamp()
+- Uso de Flexbox y Grid
+- Diseño por columnas
+
+Organizo las secciones y la galería de proyectos con Flexbox y Grid.
+Aplico media queries para ajustar tipografías y tamaños de imágenes
+según el dispositivo, y clamp() para que el texto escale de forma
+dinámica.
+Por ejemplo, la sección de proyectos pasa de 3 columnas en desktop
+a 1 columna en móvil.
+
+
+
+// PROGRAMACIÓN · APUNTES resumen//
+
+// ¿QUÉ ES LA WEB?
+La World Wide Web (WWW) es un sistema de información donde los recursos
+(páginas, imágenes, servicios, etc.) se identifican mediante URI.
+Todo en la web es un recurso identificable.
+
+// URI, URL Y URN
+URI (Uniform Resource Identifier):
+Identificador global de un recurso en la web.
+
+URL (Uniform Resource Locator):
+Tipo de URI que indica la localización del recurso y cómo acceder a él.
+
+URN (Uniform Resource Name):
+Nombre del recurso, independiente de su localización.
+
+// ORIGEN DE LA WEB
+Año de creación de la Web:
+1989
+
+Creador:
+Tim Berners-Lee (CERN)
+
+Tecnologías iniciales:
+- HTML
+- HTTP
+- Primer navegador web
+
+// EVOLUCIÓN DE LA WEB
+Web 1.0:
+Read only.
+Contenido estático, sin interacción.
+Solo frontend.
+
+Web 2.0:
+Read & Write.
+Interacción del usuario, redes sociales, contenido dinámico.
+
+Web 3.0:
+Read, Write & Execute.
+Web semántica.
+Las máquinas entienden y procesan los datos.
+
+// WEB SEMÁNTICA
+Objetivo:
+Dar significado a los datos, no solo mostrarlos visualmente.
+
+Características:
+- Uso de metadatos
+- Datos conectados
+- Automatización y sistemas inteligentes
+
+// INTERNET Y PROTOCOLOS
+TCP/IP:
+Base de Internet.
+Creado en 1969.
+
+HTTP / HTTPS:
+Protocolos de comunicación entre cliente y servidor.
+HTTPS cifra los datos para mayor seguridad.
+
+Puerto estándar HTTPS:
+443
+
+// MODELO CLIENTE-SERVIDOR
+El cliente (navegador) envía una request.
+El servidor procesa la petición y devuelve una response.
+
+// HTML
+Lenguaje base de la web.
+Define la estructura del contenido, no el diseño.
+HTML5 es la versión actual.
+
+// PWA (Progressive Web Apps)
+Webs que se comportan como aplicaciones.
+
+Características:
+- Responsive
+- Funcionan offline
+- Rápidas y seguras
+- Instalables
+- Siempre actualizadas
+
+Tecnologías clave:
+- Service Workers
+- Web App Manifest
+
+// APIs
+Permiten la comunicación entre aplicaciones.
+Se usan para integrar servicios externos y crear webs dinámicas.
